@@ -56,6 +56,7 @@
             echo "<p>".$row["entryTitle"] . " by " . $row['submitter']."</p>";
             echo "<p>" . $row["category"] . "</p>";
             echo "<p>" . $row["entrySummary"] . "</p>";
+            echo "</div>";
         }
         print "</table>\n";
     } catch (PDOException $e) {
