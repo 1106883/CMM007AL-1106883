@@ -33,7 +33,9 @@
     $username = "b7fcddd1b78e04";
     $password = "81126b3f";
     try {
-        $conn = new PDO($dsn, $username, $password);
+        $conn = new PDO($dsn, $username, $password, array(
+            PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+   ));
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
@@ -41,7 +43,7 @@
 
         $conn->exec($sql);
         $results = $conn->query($sql);
-        $conn = null;
+
 
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
