@@ -41,6 +41,7 @@
 
         $conn->exec($sql);
         $results = $conn->query($sql);
+        $conn = null;
 
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
