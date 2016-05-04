@@ -36,16 +36,15 @@
         $conn = new PDO($dsn, $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+
+
+        $query = "SELECT * FROM blogview";
+
+        $results = $conn->query($query);
+
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
-
-        $sql = "SELECT * FROM blogview";
-
-        $conn->exec($sql);
-        $results = $conn->query($sql);
-
-
 
 
 
