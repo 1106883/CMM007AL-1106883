@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="design.css"/>
+    <link rel="stylesheet"
+          href="unsemantic-grid-responsive-tablet.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1"/>
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>myBlog</title>
+</head>
+<body>
+
+<header>
+    <h1>myBlog</h1>
+    <p>because the internet needs to know what I think</p>
+</header>
+
+<nav>
+    <ul>
+        <a href="blog.html"><li>All Blog Items</li></a>
+        <a href="blog.html"><li>Work Items</li></a>
+        <a href="blog.html"><li>University Items</li></a>
+        <a href="blog.html"><li>Family Items</li></a>
+        <a href="add.html"><li>Insert a Blog Item</li></a>
+    </ul>
+</nav>
+
+<div id="content">
+
+    <form id="blogEntry" method="post">
+        <table>
+            <tr>
+                <td><label for="title">Entry Title:</label></td>
+                <td><input id="title" name="title" type="text" required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="summary">Entry Summary:</label></td>
+                <td><textarea id="summary" name="title" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="category">Entry Category:</label></td>
+                <td><input id="category" name="title" type="text" required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="submitted">Submitted By:</label></td>
+                <td><input id="submitted" name="title" type="text"/></td>
+            </tr>
+
+            <tr>
+                <td></td><td><input id="submit" type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+
+<section class="grid-100">
+    <footer>
+        Designed by Kyle Martin, 2016
+    </footer>
+</section>
+
+</body>
+
+</html>

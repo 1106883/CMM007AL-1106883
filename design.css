@@ -1,0 +1,58 @@
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+}
+
+ul {
+    padding-left: 0;
+    padding-right: 10px;
+    margin: 0 0 0 0;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+}
+
+ul li {
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+    margin: 0 0 0 0;
+    padding: 0 20px 0 15px;
+    display: inline;
+    background-color: lightgray;
+}
+
+img {
+    margin-left: 20px;
+    width:350px;
+    height:250px;
+    padding-top: 10px;
+}
+
+p {
+    text-align: justify;
+    font-family: 'PT Serif', serif;
+}
+
+#content {
+    margin-bottom: 400px;
+}
+
+#blogEntry {
+    padding-bottom: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+#summary {
+    height: 100px;
+    width: 140px;
+    text-align: left;
+    padding-top: 0;
+}
+
+#submit {
+    float: right;
+}
