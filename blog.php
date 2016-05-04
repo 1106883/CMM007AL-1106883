@@ -47,7 +47,7 @@
 
 
     try {
-        $results = $conn->sql($sql);
+        $results = $conn->query($sql);
         print "<table id='results'>\n";
         foreach ($results as $row) {
             echo "<tr>";
