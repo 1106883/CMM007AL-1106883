@@ -50,9 +50,9 @@
     }
 
     if ($cat!='%'){
-        echo "<p id='blogType'>".$cat."</p>";
+        echo "<p id='blogType'>     ".$cat."</p>";
     }
-    else echo "<p id='blogType'>All</p>";
+    else echo "<p id='blogType'>     All</p>";
 
     try {
 
