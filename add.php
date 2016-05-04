@@ -51,7 +51,7 @@
 
             <tr>
                 <td><label for="summary">Entry Summary:</label></td>
-                <td><textarea id="summary" name="title" required></textarea></td>
+                <td><textarea id="summary" name="summary" required></textarea></td>
             </tr>
 
             <tr>
@@ -65,7 +65,7 @@
 
             <tr>
                 <td><label for="submitted">Submitted By:</label></td>
-                <td><input id="submitted" name="title" type="text"/></td>
+                <td><input id="submitted" name="submitted" type="text"/></td>
             </tr>
 
             <tr>
@@ -86,6 +86,8 @@
         $sql = "INSERT INTO blogview (entryTitle, entrySummary, category, submitter) VALUES ('$title', '$summary', '$category', '$submitted')";
 
         $conn->exec($sql);
+
+        header("Location:blog.php");
 
     }
     else {
