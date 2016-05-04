@@ -36,7 +36,7 @@ p {
 }
 
 #content {
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 
 #blogEntry {
@@ -55,4 +55,11 @@ p {
 
 #submit {
     float: right;
+}
+
+.article {
+    width: 600px;
+    padding-left: 20px;
+    border-bottom: dotted;
+    border-width: 3px;
 }
