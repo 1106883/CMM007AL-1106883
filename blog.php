@@ -30,7 +30,7 @@
     <?php
 
     $dsn = "mysql:host=ap-cdbr-azure-east-c.cloudapp.net;dbname=cmm007aldb-1106883";
-    $username = "b7fcddd1b78e042";
+    $username = "b7fcddd1b78e04";
     $password = "81126b3f";
     try {
         $conn = new PDO($dsn, $username, $password);
