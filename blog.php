@@ -41,7 +41,7 @@
             $cat = '%';
         }
 
-        $query = "SELECT * FROM blogview WHERE category = $cat";
+        $query = "SELECT * FROM blogview WHERE category LIKE '%$cat%'";
 
         $results = $conn->query($query);
 
