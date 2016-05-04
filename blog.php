@@ -47,11 +47,10 @@
     $results = $conn->query($sql);
 
     foreach ($results as $row) {
-        echo '<div class="article">';
+
         echo '<p>'. $row["entryTitle"] .' by '. $row["submitter"] .'</p>';
         echo '<p>'. $row["category"] .'</p>';
         echo '<p>'. $row["entrySummary"] .'</p>';
-        echo '</div>';
     }
 
     ?>
