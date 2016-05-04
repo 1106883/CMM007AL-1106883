@@ -44,9 +44,10 @@
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
     }
-    $results = $conn->query($sql);
+
 
     try {
+        $results = $conn->query($sql);
         print "<table id='results'>\n";
         foreach ($results as $row) {
             echo "<tr>";
@@ -61,8 +62,8 @@
         }
         print "</table>\n";
     } catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-
+        echo "Connection failed: " . $e->getMessage();
+    }
 
     ?>
 
