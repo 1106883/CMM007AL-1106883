@@ -49,7 +49,10 @@
         echo "Connection failed: " . $e->getMessage();
     }
 
-
+    if ($cat!='%'){
+        echo $cat;
+    }
+    else echo "All";
 
     try {
 
