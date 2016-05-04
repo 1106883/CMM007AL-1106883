@@ -52,7 +52,7 @@
     if ($cat!='%'){
         echo $cat;
     }
-    else echo "All";
+    else echo "<p>All</p>";
 
     try {
 
