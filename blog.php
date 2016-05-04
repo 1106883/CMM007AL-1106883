@@ -46,7 +46,7 @@
     }
     $results = $conn->query($sql);
 
-
+    try {
         print "<table id='results'>\n";
         foreach ($results as $row) {
             echo "<tr>";
@@ -60,6 +60,8 @@
             echo "</tr>";
         }
         print "</table>\n";
+    } catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
 
 
     ?>
