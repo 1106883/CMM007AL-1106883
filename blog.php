@@ -52,7 +52,7 @@
     if ($cat!='%'){
         echo $cat;
     }
-    else echo "<p>All</p>";
+    else echo "<p id='blogType'>All</p>";
 
     try {
 

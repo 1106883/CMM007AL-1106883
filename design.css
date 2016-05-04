@@ -46,6 +46,11 @@ p {
     margin-left: 300px;
 }
 
+#blogType {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 #summary {
     height: 100px;
     width: 140px;
