@@ -40,6 +40,7 @@
         $sql = "SELECT * FROM blogview";
 
         $conn->exec($sql);
+        $results = $conn->query($sql);
 
     } catch (PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
@@ -47,7 +48,7 @@
 
 
     try {
-        $results = $conn->query($sql);
+
         print "<table id='results'>\n";
         foreach ($results as $row) {
             echo "<tr>";
