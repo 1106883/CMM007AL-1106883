@@ -50,7 +50,7 @@
     }
 
     if ($cat!='%'){
-        echo $cat;
+        echo "<p id='blogType'>".$cat."</p>";
     }
     else echo "<p id='blogType'>All</p>";
 
