@@ -18,11 +18,11 @@
 
 <nav>
     <ul>
-        <a href="blog.php"><li>All Blog Items</li></a>
-        <a href="blog.php"><li>Work Items</li></a>
-        <a href="blog.php"><li>University Items</li></a>
-        <a href="blog.php"><li>Family Items</li></a>
-        <a href="add.php"><li>Insert a Blog Item</li></a>
+        <li><a href="blog.php">All Blog Items</a></li>
+        <li><a href="blog.php?category=work">Work Items</a></li>
+        <li><a href="blog.php?category=university">University Items</a></li>
+        <li><a href="blog.php?category=family">Family Items</a></li>
+        <li><a href="add.php">Insert a Blog Item</a></li>
     </ul>
 </nav>
 
@@ -36,9 +36,12 @@
         $conn = new PDO($dsn, $username, $password);
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        $cat = $_GET['category'];
+        if (!isset($cat)) {
+            $cat = '%';
+        }
 
-
-        $query = "SELECT * FROM blogview";
+        $query = "SELECT * FROM blogview WHERE category = $cat";
 
         $results = $conn->query($query);
 
