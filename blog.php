@@ -52,15 +52,10 @@
 
         print "<table id='results'>\n";
         foreach ($results as $row) {
-            echo "<tr>";
-            echo "<td>" . $row["entryTitle"] . " by " . $row['submitter']."</td>";
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td>" . $row["category"] . "</td>";
-            echo "</tr>";
-            echo "<tr>";
-            echo "<td>" . $row["entrySummary"] . "</td>";
-            echo "</tr>";
+            echo "<div class='article'>";
+            echo "<p>".$row["entryTitle"] . " by " . $row['submitter']."</p>";
+            echo "<p>" . $row["category"] . "</p>";
+            echo "<p>" . $row["entrySummary"] . "</p>";
         }
         print "</table>\n";
     } catch (PDOException $e) {
