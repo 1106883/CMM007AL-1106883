@@ -37,7 +37,7 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-        $sql = "SELECT * FROM blogView";
+        $sql = "SELECT * FROM blogview";
 
         $conn->exec($sql);
 
